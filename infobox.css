@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+.trail-map-info-box {
+	background: rgba(0, 0, 0, 0.7);
+	border: 1px solid gray;
+	border-radius: 10px;
+	color: white;
+}
+.trail-map-info-box:after {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	background: transparent;
+	height: 0px;
+	width: 0px;
+	border-top: 15px solid rgba(0, 0, 0, 0.7);;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+}
+.trail-map-info-box .content {
+	padding-left: 10px;
+	padding-right: 30px;
+	font-size: 15px;
+	display: -webkit-box;
+	position: relative;
+}
+.trail-map-info-box .content:after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -25px;
+	background: transparent url(caratPopup.png) no-repeat;
+	height: 50px;
+	width: 50px;
+}
+.trail-map-info-box .content > * {
+	vertical-align: top;
+}
+.trail-map-info-box .thumbnail-wrapper {
+}
+.trail-map-description {
+	padding-left: 10px;
+	-webkit-box-flex: 1;
+}
+.trail-map-description > * {
+	margin-bottom: 5px;
+}
+.traillength {
+	font-size: 11px;
+	font-style:italic
+}
+.rating {
+	color: transparent;
+}
+.rating-1 {
+	background: transparent url(heartRating-01.png) no-repeat;
+}
+.rating-2 {
+	background: transparent url(heartRating-02.png) no-repeat;
+}
+.rating-3 {
+	background: transparent url(heartRating-03.png) no-repeat;
+}
+.rating-4 {
+	background: transparent url(heartRating-04.png) no-repeat;
+}
+.rating-5 {
+	background: transparent url(heartRating-05.png) no-repeat;
+}
