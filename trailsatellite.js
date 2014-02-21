@@ -240,10 +240,22 @@ function initialize() {
 
     // google.maps.event.trigger(marker, "click");
 
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-	var marker = new google.maps.Marker({
+    var myLatLng = new google.maps.LatLng(37.746267, -119.596949);
+    var myIcon = new google.maps.MarkerImage("foodIcon.png", null, null, null, new google.maps.Size(26, 26));
+
+	var marker1 = new google.maps.Marker({
 	  position: myLatLng,
 	  map: map,
-	  icon: iconBase + 'schools_maps.png'
+	  icon: myIcon
 	});
-  }
+
+	var photoNoteLatLng = new google.maps.LatLng(37.747328, -119.596304);
+
+	var latLng = new google.maps.LatLng(37.7477533551465, -119.59658311437227)
+	var marker2 = new google.maps.Marker({
+		position: latLng,
+		map: map,
+		icon: "charmander_run__by_ai_ki_san-d4qa7um.gif",
+		optimized: false
+	});
+}
