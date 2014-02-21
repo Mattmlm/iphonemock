@@ -6,7 +6,7 @@
 	vertical-align: top;
 }
 .trail-map-info-box {
-	background: rgba(0, 0, 0, 0.7);
+	background: #222;
 	border: 1px solid gray;
 	border-radius: 10px;
 	color: white;
@@ -19,7 +19,7 @@
 	background: transparent;
 	height: 0px;
 	width: 0px;
-	border-top: 15px solid rgba(0, 0, 0, 0.7);;
+	border-top: 15px solid #222;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 }
