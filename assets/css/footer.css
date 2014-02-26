@@ -1,0 +1,58 @@
+.footer {
+	display: -webkit-box;
+}
+.footer > * {
+	display: block;
+	-webkit-box-flex: 1;
+}
+.footer-tab {
+	padding: 5px;
+}
+.footer-icon-wrapper {
+	text-align: center;
+}
+.footer-search-icon {
+	background: transparent url(../images/navSearchIcon.png) no-repeat;
+}
+.footer-trailmap-icon {
+	background: transparent url(../images/navNavigateIcon.png) no-repeat;
+}
+.footer-home-icon {
+	background: transparent url(../images/navHomeIcon.png) no-repeat;
+}
+.footer-favorites-icon {
+	background: transparent url(../images/navFavIcon.png) no-repeat;
+}
+.footer-settings-icon {
+	background: transparent url(../images/navSettingsIcon.png) no-repeat;
+}
+
+.footer-icon {
+	height: 28px;
+	width: 28px;
+	display: inline-block;
+	background-size: 28px;
+	pointer-events: none;
+}
+
+.footer-tab.active .footer-search-icon {
+	background: transparent url(../images/navSearchOnIcon.png) no-repeat;
+}
+.footer-tab.active .footer-trailmap-icon {
+	background: transparent url(../images/navNavigateOnIcon.png) no-repeat;
+}
+.footer-tab.active .footer-home-icon {
+	background: transparent url(../images/navHomeOnIcon.png) no-repeat;
+}
+.footer-tab.active .footer-favorites-icon {
+	background: transparent url(../images/navFavOnIcon.png) no-repeat;
+}
+.footer-tab.active .footer-settings-icon {
+	background: transparent url(../images/navSettingsOnIcon.png) no-repeat;
+}
+.footer-tab.active .footer-icon {
+	background-size: 28px;
+}
+.footer-tab.active {
+	color: lightblue;
+}
