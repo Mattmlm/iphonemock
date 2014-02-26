@@ -12,10 +12,10 @@ function InfoBox(opts) {
   google.maps.OverlayView.call(this);
   this.latlng_ = opts.latlng;
   this.map_ = opts.map;
-  this.offsetVertical_ = -180;
-  this.offsetHorizontal_ = -165;
-  this.height_ = 120;
-  this.width_ = 260;
+  this.offsetVertical_ = -145;
+  this.offsetHorizontal_ = -115;
+  this.height_ = 90;
+  this.width_ = 200;
   this.content_ = opts.content;
 
   var me = this;
