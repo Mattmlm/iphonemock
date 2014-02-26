@@ -47,19 +47,19 @@
 	font-style:italic
 }
 .rating-1 {
-	background: transparent url(heartRating-01.png) no-repeat;
+	background: transparent url(../images/heartRating-01.png) no-repeat;
 }
 .rating-2 {
-	background: transparent url(heartRating-02.png) no-repeat;
+	background: transparent url(../images/heartRating-02.png) no-repeat;
 }
 .rating-3 {
-	background: transparent url(heartRating-03.png) no-repeat;
+	background: transparent url(../images/heartRating-03.png) no-repeat;
 }
 .rating-4 {
-	background: transparent url(heartRating-04.png) no-repeat;
+	background: transparent url(../images/heartRating-04.png) no-repeat;
 }
 .rating-5 {
-	background: transparent url(heartRating-05.png) no-repeat;
+	background: transparent url(../images/heartRating-05.png) no-repeat;
 }
 .rating {
 	color: transparent;

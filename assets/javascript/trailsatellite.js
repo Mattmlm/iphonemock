@@ -241,7 +241,7 @@ function initialize() {
     // google.maps.event.trigger(marker, "click");
 
     var myLatLng = new google.maps.LatLng(37.746173,-119.596949);
-    var foodIcon = new google.maps.MarkerImage("foodIcon.png", null, null, null, new google.maps.Size(26, 26));
+    var foodIcon = new google.maps.MarkerImage("assets/images/foodIcon.png", null, null, null, new google.maps.Size(26, 26));
 
 	var marker1 = new google.maps.Marker({
 	  position: myLatLng,
@@ -250,7 +250,7 @@ function initialize() {
 	});
 
 	var photoNoteLatLng1 = new google.maps.LatLng(37.746819,-119.59632);
-	var cameraIcon = new google.maps.MarkerImage("noteCamera.png", null, null, null, new google.maps.Size(26, 26));
+	var cameraIcon = new google.maps.MarkerImage("assets/images/noteCamera.png", null, null, null, new google.maps.Size(26, 26));
 	var marker2 = new google.maps.Marker({
 	  position: photoNoteLatLng1,
 	  map: map,
@@ -261,7 +261,7 @@ function initialize() {
 	var marker3 = new google.maps.Marker({
 		position: latLng,
 		map: map,
-		icon: "charmander_run__by_ai_ki_san-d4qa7um.gif",
+		icon: "assets/images/charmander_run__by_ai_ki_san-d4qa7um.gif",
 		optimized: false
 	});
 
