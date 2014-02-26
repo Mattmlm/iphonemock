@@ -95,24 +95,24 @@ InfoBox.prototype.createElement = function() {
       "</div>"
       ;
 
-    var topDiv = document.createElement("div");
-    topDiv.style.textAlign = "right";
-    var closeImg = document.createElement("img");
-    closeImg.style.width = "32px";
-    closeImg.style.height = "32px";
-    closeImg.style.cursor = "pointer";
-    closeImg.src = "http://gmaps-samples.googlecode.com/svn/trunk/images/closebigger.gif";
-    topDiv.appendChild(closeImg);
+    // var topDiv = document.createElement("div");
+    // topDiv.style.textAlign = "right";
+    // var closeImg = document.createElement("img");
+    // closeImg.style.width = "32px";
+    // closeImg.style.height = "32px";
+    // closeImg.style.cursor = "pointer";
+    // closeImg.src = "http://gmaps-samples.googlecode.com/svn/trunk/images/closebigger.gif";
+    // topDiv.appendChild(closeImg);
 
-    function removeInfoBox(ib) {
-      return function() {
-        ib.setMap(null);
-      };
-    }
+    // function removeInfoBox(ib) {
+    //   return function() {
+    //     ib.setMap(null);
+    //   };
+    // }
 
-    google.maps.event.addDomListener(closeImg, 'click', removeInfoBox(this));
+    // google.maps.event.addDomListener(closeImg, 'click', removeInfoBox(this));
 
-    div.appendChild(topDiv);
+    // div.appendChild(topDiv);
     div.appendChild(contentDiv);
     div.style.display = 'none';
     panes.floatPane.appendChild(div);
