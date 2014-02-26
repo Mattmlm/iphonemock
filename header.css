@@ -1,0 +1,15 @@
+/*header.css*/
+
+.header {
+	background: #613F22;
+	display: -webkit-box;
+	color: white;
+	height: 44px;
+}
+.header > * {
+	-webkit-box-flex: 1;
+	padding: 5px 10px;
+}
+.header-back-button {
+	
+}
