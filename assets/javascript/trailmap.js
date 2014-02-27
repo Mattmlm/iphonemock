@@ -92,6 +92,8 @@ InfoBox.prototype.createElement = function() {
         "<div class='title'>" + this.content_.title + "</div>" +
         "<div class='traillength'>" + this.content_.traillength + " trail</div>" +
         "<div class='rating rating-" + this.content_.rating + "'>" + this.content_.rating + "</div>" +
+      "</div>" +
+      "<a class='trail-link' onclick=\"window.location = '" + this.content_.link + "'\">" +
       "</div>"
       ;
 

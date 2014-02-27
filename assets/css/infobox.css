@@ -25,9 +25,20 @@
 	border-right: 15px solid transparent;
 }
 .trail-map-info-box .content {
-	font-size: 13px;
+	font-size: 11px;
 	display: -webkit-box;
 	position: relative;
+}
+.trail-map-info-box .trail-link {
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -13px;
+	background: transparent url(../images/caratPopup.png) no-repeat;
+	height: 25px;
+	width: 25px;
+	background-size: 25px;
 }
 
 .trail-map-info-box .content > * {
