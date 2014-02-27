@@ -204,6 +204,9 @@ function createMarker(coords, map, content) {
   });
 
   google.maps.event.addListener(marker, "click", function(e) {
+    if(window.infoBox) {
+      window.infoBox.setMap(null);
+    }
     window.infoBox = new InfoBox({latlng: marker.getPosition(), map: map, content: content});
   });
 
@@ -236,15 +239,9 @@ function initialize() {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-
-    // var marker = new google.maps.Marker({
-    //     position: new google.maps.LatLng(37.740856, -119.602661),
-    //     map: map
-    // });
-    // google.maps.event.addListener(marker, "click", function(e) {
-    //   var infoBox = new InfoBox({latlng: marker.getPosition(), map: map, title: "testing"});
-    // });
     
+    window.infoBox = null;
+
     var marker_coord1 = new google.maps.LatLng(37.740856, -119.602661)
     var marker_content1 = {
       "title" : "Lower Falls",
