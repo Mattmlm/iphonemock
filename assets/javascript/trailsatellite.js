@@ -201,6 +201,7 @@ function createMarker(coords, map, content) {
   var marker = new google.maps.Marker({
     position: coords,
     map: map,
+    icon: icon,
     title: content.title
   });
 
@@ -225,23 +226,20 @@ function createMarker(coords, map, content) {
 }
 
 function initialize() {
-    // var myOptions = {
-    //   zoom: 8,
-    //   center: new google.maps.LatLng(-33.397, 150.644),
-    //   mapTypeId: google.maps.MapTypeId.ROADMAP,
-    //   sensor: 'true'
-    // }
-    var myOptions = {
-      zoom: 17,
-      center: new google.maps.LatLng(37.7477533551465, -119.59658311437227),
-      mapTypeId: google.maps.MapTypeId.HYBRID
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-    // google.maps.event.trigger(marker, "click");
+  // Set up map
+  var myOptions = {
+    zoom: 17,
+    center: new google.maps.LatLng(37.7477533551465, -119.59658311437227),
+    mapTypeId: google.maps.MapTypeId.HYBRID
+  };
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-    var myLatLng = new google.maps.LatLng(37.746173,-119.596949);
-    var foodIcon = new google.maps.MarkerImage("assets/images/foodIcon.png", null, null, null, new google.maps.Size(26, 26));
+  // google.maps.event.trigger(marker, "click");
+
+  // Marker data
+  var myLatLng = new google.maps.LatLng(37.746173,-119.596949);
+  var foodIcon = new google.maps.MarkerImage("assets/images/foodIcon.png", null, null, null, new google.maps.Size(26, 26));
 
 	var marker1 = new google.maps.Marker({
 	  position: myLatLng,
@@ -271,4 +269,16 @@ function initialize() {
 	  map: map,
 	  icon: cameraIcon
 	});
+
+  google.maps.event.addListener(marker2, "click", function(e) {
+    window.location = 'lower_falls_panoramic.html'
+  });
+  google.maps.event.addListener(marker4, "click", function(e) {
+    window.location = 'lower_falls_panoramic.html'
+  });
+
+  google.maps.event.addListener(marker3, "click", function(e) {
+    // window.location = 'http://fc05.deviantart.net/fs71/i/2013/070/8/5/t_rex_maw_by_fatthoron-d5xr8s1.jpg'
+  });
+  
 }

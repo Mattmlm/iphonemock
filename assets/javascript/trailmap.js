@@ -250,7 +250,7 @@ function initialize() {
       "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
       "rating" : 4,
       "traillength" : "10 mile",
-      "link": "lower_falls_panoramic.html"
+      "link": "trailsatellite_lowerfalls.html"
     }
 
     var marker_coord2 = new google.maps.LatLng(37.739635, -119.574165)
@@ -259,7 +259,7 @@ function initialize() {
       "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
       "rating" : 3,
       "traillength" : "10 mile",
-      "link": "lower_falls_panoramic.html"
+      "link": "trailsatellite_lowerfalls.html"
     }
 
     var marker_coord3 = new google.maps.LatLng(37.727009, -119.609528)
@@ -268,7 +268,7 @@ function initialize() {
       "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
       "rating" : 3,
       "traillength" : "10 mile",
-      "link": "lower_falls_panoramic.html"
+      "link": "trailsatellite_lowerfalls.html"
     }
 
     var marker_coord4 = new google.maps.LatLng(37.727959, -119.613819)
@@ -277,7 +277,7 @@ function initialize() {
       "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
       "rating" : 3,
       "traillength" : "10 mile",
-      "link": "lower_falls_panoramic.html"
+      "link": "trailsatellite_lowerfalls.html"
     }
 
     var marker_coord5 = new google.maps.LatLng(37.733797, -119.60146)
@@ -286,7 +286,7 @@ function initialize() {
       "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
       "rating" : 3,
       "traillength" : "10 mile",
-      "link": "lower_falls_panoramic.html"
+      "link": "trailsatellite_lowerfalls.html"
     }
 
     createMarker(marker_coord1, map, marker_content1);
