@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Trade Gothic LTS Condensed';
+  src: url('../fonts/Trade Gothic LTS Condensed.otf') format('opentype');
+}
+
+body {
+	margin: 0px !important;
+	background: url(../images/bg.jpg) no-repeat;
+	text-align: center;
+	background-size: 100%;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.heroLogo {
+	text-align: center;
+	padding: 10px 5px;
+}
+.heroLogo img {
+	width: 143px;
+}
+
+.heroWrapper {
+	position: relative; 
+	display: inline-block;
+}
+
+.articleTitle {
+	position: absolute;
+	font-size: 14px;
+	color: #fff;
+	font-family: 'helvetica';
+	width: 60%;
+	height: 100%;
+	line-height: 1.3em;
+	padding: 35px 0px 0px 20px; 
+
+	text-align: left;
+}
+
+.box1 {
+	border-radius: 10px;
+	border: white;
+	margin-top: 10px;
+	height: 200px;
+	width: 160px;
+	background-color: #5B391D;
+	font-family: 'Trade Gothic LTS Condensed';
+	color: #fff;
+	border-style:solid;
+	border-color:#fff;
+
+}
+
+.box2 {
+	border-radius: 10px;
+	border: white;
+	margin-top: 10px;
+	height: 200px;
+	width: 160px;
+	background-color: #5B391D;
+	float:right;
+	font-family: 'Trade Gothic LTS Condensed';
+	color: #fff;
+	border-style:solid;
+	border-color:#fff;
+}
+
