@@ -26,7 +26,7 @@ img {
 	text-align: center;
 	padding: 10px 5px;
 }
-.heroLogo img {
+#logo {
 	width: 143px;
 }
 
@@ -48,31 +48,40 @@ img {
 	text-align: left;
 }
 
-.box1 {
-	border-radius: 10px;
-	border: white;
-	margin-top: 10px;
-	height: 200px;
-	width: 160px;
-	background-color: #5B391D;
-	font-family: 'Trade Gothic LTS Condensed';
-	color: #fff;
-	border-style:solid;
-	border-color:#fff;
-
+.main-row {
+	padding: 0px 10px;
 }
 
-.box2 {
+.menu-box {
+	display: -webkit-box;
+	-webkit-box-flex: 1;
 	border-radius: 10px;
 	border: white;
 	margin-top: 10px;
-	height: 200px;
-	width: 160px;
+	padding: 15px 10px;
 	background-color: #5B391D;
-	float:right;
 	font-family: 'Trade Gothic LTS Condensed';
 	color: #fff;
 	border-style:solid;
 	border-color:#fff;
+}
+.menu-box h3 {
+	margin-top: 15px;
+}
+.menu-box img {
+	width: 95px;
+}
+.box-capture {
+	-webkit-box-flex: 2;
+	margin-left: 10px;
+}
+.box-capture, .box-search {
+	-webkit-box-align: end;
+	-webkit-box-pack: center;
+}
+
+.search-capture-row {
+	display: -webkit-box;
+	height: 200px;
 }
 
