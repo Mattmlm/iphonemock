@@ -8,6 +8,7 @@ body {
 	background: url(../images/bg.jpg) no-repeat;
 	text-align: center;
 	background-size: 100%;
+	height: 568px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -49,24 +50,20 @@ img {
 }
 
 .main-row {
+	display: -webkit-box;
 	padding: 0px 10px;
 }
 
 .menu-box {
-	display: -webkit-box;
 	-webkit-box-flex: 1;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	border: white;
 	margin-top: 10px;
-	padding: 15px 10px;
 	background-color: #5B391D;
 	font-family: 'Trade Gothic LTS Condensed';
 	color: #fff;
 	border-style:solid;
 	border-color:#fff;
-}
-.menu-box h3 {
-	margin-top: 15px;
 }
 .menu-box img {
 	width: 95px;
@@ -76,12 +73,32 @@ img {
 	margin-left: 10px;
 }
 .box-capture, .box-search {
+	display: -webkit-box;
 	-webkit-box-align: end;
 	-webkit-box-pack: center;
 }
-
+.box-search h3, .box-capture h3 {
+	padding: 15px 0px;
+}
 .search-capture-row {
 	display: -webkit-box;
 	height: 200px;
 }
 
+.favorites-settings-row {
+	display: -webkit-box;
+	height: 140px;	
+}
+
+.box-favorites {
+	-webkit-box-flex: 10;
+	margin-right: 10px;
+}
+.box-favorites h3, .box-settings h3 {
+	text-align: left;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+.box-favorites > * {
+	display: block;
+}
