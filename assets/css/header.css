@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Trade Gothic LTS Condensed';
+  src: url('../fonts/Trade Gothic LTS Condensed.otf') format('opentype');
+}
+
 /*header.css*/
 
 .header {
@@ -5,6 +10,7 @@
 	display: -webkit-box;
 	color: white;
 	height: 44px;
+	font-family: 'Trade Gothic LTS Condensed';
 }
 .header > * {
 	-webkit-box-flex: 1;
@@ -12,18 +18,25 @@
 	-webkit-box-pack: center;
 	-webkit-box-align: center;
 	padding: 5px 10px;
+	font-size: 20px;
 }
-.header-back-button {	
+.header-back-button {
+
 }
 .back-icon {
 	background: transparent url(../images/caratBack.png) no-repeat;
 	background-size: 14px;
-	display: inline-block;
+	display: block;
 	width: 14px; height: 22px;
 	margin-right: 3px;
 	pointer-events: none;
 }
-.header-add-to-fav {
+.back-text {
+	margin-top: 6px;
+}
+.header-page-title {
+	text-transform: uppercase;
+	padding-top: 10px;
 }
 
 .add-to-fav-icon {
