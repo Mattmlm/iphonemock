@@ -8,8 +8,28 @@
 }
 .header > * {
 	-webkit-box-flex: 1;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
 	padding: 5px 10px;
 }
-.header-back-button {
-	
+.header-back-button {	
+}
+.back-icon {
+	background: transparent url(../images/caratBack.png) no-repeat;
+	background-size: 14px;
+	display: inline-block;
+	width: 14px; height: 22px;
+	margin-right: 3px;
+	pointer-events: none;
+}
+.header-add-to-fav {
+}
+
+.add-to-fav-icon {
+	background: transparent url(../images/headerHeartIcon.png) no-repeat;
+	background-size: 25px;
+	display: inline-block;
+	width: 25px; height: 23px;
+	pointer-events: none;
 }
