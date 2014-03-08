@@ -1,0 +1,87 @@
+/*search.css*/
+
+body, div, h1, h2, h3, dl, dt, dd, ul, li {
+	padding:0;
+	margin:0;
+	border:0;
+	font-family:arial;
+	font-weight:normal;
+	line-height:1;
+	font-size:100%;
+	list-style:none;
+	-webkit-user-select:none;
+}
+* {
+	box-sizing: border-box;
+}
+
+div {
+	width:320px;
+}
+
+#wrapper {
+	position:relative;	/* needed */
+	z-index:1;			/* needed and important */
+	height:440px;		/* needed */
+	overflow:auto;	/* suggested */
+}
+
+#scroller {
+	width:320px;
+	padding-bottom:44px;
+}
+
+dt {
+	width: 100%; height:24px; line-height:24px;
+	padding-left:12px;
+	font-size:19px; font-weight:bold;
+	color: black;
+	background: #eee;
+}
+
+dt:first-child {
+	border-top:0;
+}
+
+dd {
+	width:100%; height:44px;
+	padding-left:10px;
+	line-height:44px;
+	font-size:20px;
+	border-bottom:1px solid #e0e0e0;
+}
+dd span {
+	display: block;
+	padding-right: 25px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#abc {
+	position:absolute; z-index:1000;
+	top:50px; right:4px;
+	width:28px; height:364px;
+	-webkit-border-radius:14px;
+	text-align:center;
+	font-size:11px;
+	color:#6a737d;
+}
+#abc a:-webkit-any-link {
+	display: block;
+	color: #309FEE;
+	text-decoration: none;
+}
+
+#abc a {
+	padding-top:2px;
+	font-weight:bold;
+}
+
+#abc a:first-child {
+	padding-top:6px;
+}
+
+#abc.hover {
+	background:rgba(106,115,125,0.5);
+}
