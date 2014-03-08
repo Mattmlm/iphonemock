@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
 			console.log("testing ajax")
 			var searchList = ""
 	 		jQuery(xml).find('name').each(function() {
-	 			searchList += "<dd><span>" + jQuery(this).html() + "</span></dd>";
+	 			searchList += "<dd id='" + jQuery(this).html() + "'><span>" + jQuery(this).html() + "</span></dd>";
 	 		});
 	 		// console.log(searchList);
 	 		jQuery('#scroller').html(searchList);
