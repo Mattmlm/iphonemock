@@ -13,6 +13,11 @@ jQuery(document).ready(function() {
 	 		});
 	 		// console.log(searchList);
 	 		jQuery('#scroller').html(searchList);
+ 			jQuery('#Yosemite').on("click", function() {
+ 				if (parent.window.change_iframe_src) {
+ 					parent.window.change_iframe_src("trailgooglemap.html");
+ 				}
+			});
 		},
 		error: function (xhr, ajaxOptions, thrownError) {
 			console.log("Error with ajaxing nationalPark.xml")
