@@ -17,6 +17,10 @@ jQuery(document).ready(function() {
  				if (parent.window.change_iframe_src) {
  					parent.window.change_iframe_src("trailgooglemap.html");
  				}
+
+ 				jQuery('.header-page-title', parent.document).text('Trail Map');
+ 				jQuery('.footer-tab', parent.document).removeClass('active');
+ 				jQuery('.footer-trailmap', parent.document).addClass('active');
 			});
 		},
 		error: function (xhr, ajaxOptions, thrownError) {
