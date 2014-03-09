@@ -66,6 +66,7 @@ img {
 	border-color:#fff;
 }
 .menu-box img {
+	pointer-events: none;
 	width: 95px;
 }
 .box-search img {
