@@ -3,7 +3,7 @@
 jQuery(document).ready(function() {
 	jQuery.ajax({
         type: "GET",
-		url: "https://dl.dropboxusercontent.com/u/883211/nationalPark.xml",
+		url: "assets/xml/nationalPark.xml",
 		dataType: "xml",
 		success: function(xml) {
 			console.log("testing ajax")
