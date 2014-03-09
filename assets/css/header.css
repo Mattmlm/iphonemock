@@ -7,12 +7,14 @@
 
 .header {
 	background: #613F22;
+}
+.header-button-row {
 	display: -webkit-box;
 	color: white;
 	height: 44px;
 	font-family: 'Trade Gothic LTS Condensed';
 }
-.header > * {
+.header-button-row > * {
 	-webkit-box-flex: 1;
 	display: -webkit-box;
 	-webkit-box-pack: center;
@@ -20,7 +22,7 @@
 	padding: 5px 10px;
 	font-size: 20px;
 }
-.header > *:first-child, .header > *:last-child {
+.header-button-row > *:first-child, .header-button-row > *:last-child {
 	width: 80px;
 }
 .header-back-button {
@@ -43,10 +45,21 @@
 	width: 50%;
 }
 
+.header-add-to-fav {
+	display: none;
+}
 .add-to-fav-icon {
 	background: transparent url(../images/headerHeartIcon.png) no-repeat;
 	background-size: 25px;
 	display: inline-block;
 	width: 25px; height: 23px;
 	pointer-events: none;
+}
+
+.header-search-icon {
+	background: transparent url(../images/search.png) no-repeat;
+	background-size: 25px;
+	display: inline-block;
+	width: 25px; height: 23px;
+	pointer-events: none;	
 }
