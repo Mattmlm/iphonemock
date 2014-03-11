@@ -7,9 +7,16 @@ jQuery(document).ready(function() {
 		dataType: "xml",
 		success: function(xml) {
 			console.log("testing ajax")
-			var searchList = ""
+			var letter = "A";
+			var searchList = "<div class='A-trails trail-category'>" + "<a id='" + letter + "-header'></a>"
 	 		jQuery(xml).find('name').each(function() {
-	 			searchList += "<dd id='" + jQuery(this).text() + "'><span>" + jQuery(this).text() + "</span></dd>";
+	 			var currentFirstLetter = this.textContent[0]
+	 			if(currentFirstLetter != letter) {
+	 				searchList += "</div>"
+	 				letter = currentFirstLetter;
+	 				searchList += "<div class='" + letter + "-trails trail-category'>" + "<a id='" + letter + "-header'></a>";
+	 			}
+	 			searchList += "<dd id='" + this.textContent + "'><span>" + this.textContent + "</span></dd>";
 	 		});
 	 		// console.log(searchList);
 	 		jQuery('#scroller').html(searchList);
