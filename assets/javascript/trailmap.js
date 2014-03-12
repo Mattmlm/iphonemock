@@ -229,71 +229,71 @@ function createMarker(coords, map, content) {
 }
 
 function initialize() {
-    // var myOptions = {
-    //   zoom: 8,
-    //   center: new google.maps.LatLng(-33.397, 150.644),
-    //   mapTypeId: google.maps.MapTypeId.ROADMAP,
-    //   sensor: 'true'
-    // }
-    var myOptions = {
-      zoom: 13,
-      center: new google.maps.LatLng(37.740856, -119.602661),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-    
-    window.infoBox = null;
+  // var myOptions = {
+  //   zoom: 8,
+  //   center: new google.maps.LatLng(-33.397, 150.644),
+  //   mapTypeId: google.maps.MapTypeId.ROADMAP,
+  //   sensor: 'true'
+  // }
+  var myOptions = {
+    zoom: 13,
+    center: new google.maps.LatLng(37.740856, -119.602661),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  
+  window.infoBox = null;
 
-    var marker_coord1 = new google.maps.LatLng(37.740856, -119.602661)
-    var marker_content1 = {
-      "title" : "Lower Falls",
-      "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
-      "rating" : 4,
-      "traillength" : "10 mile",
-      "link": "trailsatellite_lowerfalls.html"
-    }
-
-    var marker_coord2 = new google.maps.LatLng(37.739635, -119.574165)
-    var marker_content2 = {
-      "title" : "John Muir Trail",
-      "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
-      "rating" : 3,
-      "traillength" : "10 mile",
-      "link": "trailsatellite_lowerfalls.html"
-    }
-
-    var marker_coord3 = new google.maps.LatLng(37.727009, -119.609528)
-    var marker_content3 = {
-      "title" : "Valley Floor Trail",
-      "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
-      "rating" : 3,
-      "traillength" : "10 mile",
-      "link": "trailsatellite_lowerfalls.html"
-    }
-
-    var marker_coord4 = new google.maps.LatLng(37.727959, -119.613819)
-    var marker_content4 = {
-      "title" : "Yosemite Falls Trail",
-      "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
-      "rating" : 3,
-      "traillength" : "10 mile",
-      "link": "trailsatellite_lowerfalls.html"
-    }
-
-    var marker_coord5 = new google.maps.LatLng(37.733797, -119.60146)
-    var marker_content5 = {
-      "title" : "Cooks Meadow Trail",
-      "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
-      "rating" : 3,
-      "traillength" : "10 mile",
-      "link": "trailsatellite_lowerfalls.html"
-    }
-
-    createMarker(marker_coord1, map, marker_content1);
-    createMarker(marker_coord2, map, marker_content2);
-    createMarker(marker_coord3, map, marker_content3);
-    createMarker(marker_coord4, map, marker_content4);
-    createMarker(marker_coord5, map, marker_content5);
-
-    // google.maps.event.trigger(marker, "click");
+  var marker_coord1 = new google.maps.LatLng(37.740856, -119.602661)
+  var marker_content1 = {
+    "title" : "Lower Falls",
+    "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
+    "rating" : 4,
+    "traillength" : "10 mile",
+    "link": "trailsatellite_lowerfalls.html"
   }
+
+  var marker_coord2 = new google.maps.LatLng(37.739635, -119.574165)
+  var marker_content2 = {
+    "title" : "John Muir Trail",
+    "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
+    "rating" : 3,
+    "traillength" : "10 mile",
+    "link": "trailsatellite_lowerfalls.html"
+  }
+
+  var marker_coord3 = new google.maps.LatLng(37.727009, -119.609528)
+  var marker_content3 = {
+    "title" : "Valley Floor Trail",
+    "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
+    "rating" : 3,
+    "traillength" : "10 mile",
+    "link": "trailsatellite_lowerfalls.html"
+  }
+
+  var marker_coord4 = new google.maps.LatLng(37.727959, -119.613819)
+  var marker_content4 = {
+    "title" : "Yosemite Falls Trail",
+    "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
+    "rating" : 3,
+    "traillength" : "10 mile",
+    "link": "trailsatellite_lowerfalls.html"
+  }
+
+  var marker_coord5 = new google.maps.LatLng(37.733797, -119.60146)
+  var marker_content5 = {
+    "title" : "Cooks Meadow Trail",
+    "thumbnail" : "http://api.ning.com/files/jqWty7Z2-j18V8lGhYZQ8AA0kqLDZ2aSK-k9YPKVrKRTd3YkErMx3IfwvTMsoF0Y6-gqOIcxf2VQsIc3gJJD*aHhEprpbVpX/ColorsLowerFallsYellowstoneNationalPark.jpg?crop=1%3A1&width=64",
+    "rating" : 3,
+    "traillength" : "10 mile",
+    "link": "trailsatellite_lowerfalls.html"
+  }
+
+  createMarker(marker_coord1, map, marker_content1);
+  createMarker(marker_coord2, map, marker_content2);
+  createMarker(marker_coord3, map, marker_content3);
+  createMarker(marker_coord4, map, marker_content4);
+  createMarker(marker_coord5, map, marker_content5);
+
+  // google.maps.event.trigger(marker, "click");
+}
