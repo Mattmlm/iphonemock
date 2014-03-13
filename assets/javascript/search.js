@@ -1,6 +1,11 @@
 // search.js
 
 jQuery(document).ready(function() {
+
+	// Set page state to Search when on this page
+	parent.window.pageState = "Search";
+
+	// AJAX nationalPark.xml contents
 	jQuery.ajax({
         type: "GET",
 		url: "assets/xml/nationalPark.xml",
@@ -25,7 +30,6 @@ jQuery(document).ready(function() {
  					parent.window.change_iframe_src("trailgooglemap.html");
  				}
 
- 				jQuery('.header-page-title', parent.document).text('Trail Map');
  				jQuery('.footer-tab', parent.document).removeClass('active');
  				jQuery('.footer-trailmap', parent.document).addClass('active');
 			});

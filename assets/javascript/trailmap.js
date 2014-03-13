@@ -297,3 +297,7 @@ function initialize() {
 
   // google.maps.event.trigger(marker, "click");
 }
+
+if(parent.window) {
+  parent.window.pageState = "Trail Map";
+}

@@ -282,3 +282,7 @@ function initialize() {
   });
   
 }
+
+if(parent.window) {
+  parent.window.pageState = "Trail Map";
+}

@@ -1,6 +1,14 @@
 // header.js
 
+function updateTitle() {
+	var pageTitle = $('.header-page-title');
+	if(pageTitle.text() != window.pageState) {
+		pageTitle.text(window.pageState);
+	}
+}
 $(document).ready(function() {
+	window.pageState = "Search";
+	setInterval(updateTitle, 100);
 	$('.header-back-button').click(function() {
 		window.history.back();
 	});
