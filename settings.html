@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	    <link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/css/base/jquery.ui.all.css" rel="stylesheet">
+	    <link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/css/lightness/jquery-ui-1.10.2.custom.min.css" rel="stylesheet">
+	    <link href="assets/css/settings.css" rel="stylesheet">
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+	    <script src="assets/javascript/settings.js"></script>
+	</head>
+	<body>
+		<h1>Settings</h1>
+		<h2>Filter by Difficulty</h2>
+		<div>
+			<div class="difficultyBar">
+			    <div class="container">
+			    	<style>
+			    		#demo-frame > div.demo { padding: 10px !important; }
+			    	</style>
+			    	<script>
+			    		$(function() {
+			    			$( "#slider" ).slider();
+			    		});
+			    	</script>
+			    	<div class="demo">
+			    		<div id="slider"></div>
+			    	</div><!-- End demo -->
+			    	<div class="demo-description" style="display: none;">
+			    		<p>The basic slider is horizontal and has a single handle that can be moved with the mouse or by using the arrow keys.</p>
+			    	</div><!-- End demo-description -->
+			    	<div>
+			    		<p>Easy</p>
+			    		<p>Hard</p>
+			    	</div>
+			    </div>
+			</div>
+			<div class="display-distance">
+				<h2>Display Distance</h2>
+				<div class="distance-buttons-wrapper">
+					<div class="distance-button active">Miles</div>
+					<div class="distance-button">Kilometers</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
