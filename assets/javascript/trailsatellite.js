@@ -259,7 +259,7 @@ function initialize() {
 	var marker3 = new google.maps.Marker({
 		position: latLng,
 		map: map,
-		icon: "assets/images/charmander_run__by_ai_ki_san-d4qa7um.gif",
+		icon: "assets/images/circleBlue.gif",
 		optimized: false
 	});
 
