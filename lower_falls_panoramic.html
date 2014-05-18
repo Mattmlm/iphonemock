@@ -77,6 +77,14 @@
 	</style>
 </head>
 <body>
+		<div class="overlay" onclick="this.style.display='none'" style="
+    position: absolute;
+    height: 440px !important;
+    width: 320px !important;
+    display: block;
+    background: url('assets/images/helpImage3.png');
+    z-index: 5;
+"></div>
 	<div style="position: relative;">
 		<img id="panoramic" src="assets/images/yosemiteStitchSmall.jpg"/>
 		<a onclick="jQuery(this).toggleClass('active');jQuery('#fire-in-yosemite-popup').toggleClass('active');" id='fire-in-yosemite-link' class="info-link"><img id="note-" src="assets/images/noteAg.png"/></a>

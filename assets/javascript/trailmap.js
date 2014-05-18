@@ -212,6 +212,8 @@ function createMarker(coords, map, content) {
     window.infoBox = new InfoBox({latlng: marker.getPosition(), map: map, content: content});
   });
 
+  return marker;
+
   // var marker = new google.maps.Marker({
   //   position: coords,
   //   map: map,
@@ -289,13 +291,13 @@ function initialize() {
     "link": "trailsatellite_lowerfalls.html"
   }
 
-  createMarker(marker_coord1, map, marker_content1);
+  var marker1 = createMarker(marker_coord1, map, marker_content1);
   createMarker(marker_coord2, map, marker_content2);
   createMarker(marker_coord3, map, marker_content3);
   createMarker(marker_coord4, map, marker_content4);
   createMarker(marker_coord5, map, marker_content5);
 
-  // google.maps.event.trigger(marker, "click");
+  new google.maps.event.trigger( marker1, 'click' );
 }
 
 if(parent.window) {

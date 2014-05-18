@@ -10,14 +10,14 @@ function getParameterByName(name) {
 jQuery(document).ready(function() {
 	console.log("testing main");
 
-	var page = getParameterByName(page);
-	if(page == "search") {
-		jQuery('#page-iframe').attr('src', 'search.html');
-	}
-	if(page == "trailmap") {
-		jQuery('#page-iframe').attr('src', 'trailgooglemap.html');
-	}
-	if(page == "settings") {
-		jQuery('#page-iframe').attr('src', 'settings.html');
-	}
+	// var page = getParameterByName("page");
+	// if(page == "search") {
+	// 	jQuery('#page-iframe').attr('src', 'search.html');
+	// }
+	// if(page == "trailmap") {
+	// 	jQuery('#page-iframe').attr('src', 'trailgooglemap.html');
+	// }
+	// if(page == "settings") {
+	// 	jQuery('#page-iframe').attr('src', 'settings.html');
+	// }
 });
